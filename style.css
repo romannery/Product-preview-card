@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Fraunces');
+
+
+body{
+    margin: 0;
+    background: var(--cream-bg, #F2EAE2); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Montserrat;
+}
+
+.productImage{
+    width: 300px;
+    height: 450px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.descriptionContainer{
+    background: var(--pure-white, #FFF);
+    width: 236px;
+    padding: 32px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height:386px;
+}
+
+.description{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--aurometal-saurus, #6C7289);
+    width: 237px;
+    line-height: 23px;
+    margin-bottom: 29px;
+}
+
+.productName{
+    font-family:Fraunces ;
+    font-size: 32px;
+    font-weight: 700;
+    width: 212px;
+    line-height: 32px;
+    margin-bottom:24px;
+}
+
+#button{
+    background: var(--deep-aquamarine, #3D8168);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 55px;
+    border-radius: 8px;
+    color: white;
+    height: 17px;
+    width: 126px;
+    font-size:14px;
+    gap: 8px;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#button:hover{
+    background: var(--deep-aquamarine-hover, #1A4032);
+
+}
+
+.category{
+    font-size: 12px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.price{
+    font-size: 32px;
+    font-weight: 700;
+    width: 127px;
+    display: flex;
+    flex-direction: row;
+    gap:19px;
+    margin-bottom: 30px;
+}
+
+.discount{
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--deep-aquamarine, #3D8168);
+    font-family: Fraunces;
+    
+}
+
+.original{
+    font-weight: 500;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--aurometal-saurus, #6C7289);
+    text-decoration-line:line-through;
+}
+
+@media(max-width:1000px){
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.productImage{
+width: 343px;
+height: 240px;
+object-fit:cover;
+object-position: 0px -120px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 0px;
+}
+
+.descriptionContainer{
+    width:295px;
+    height: 323px;
+    padding: 24px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+}
+
+.productName{
+    height: 64px;
+    width: 295px;
+    margin-bottom: 16px;
+}
+
+.description{
+    width: 295px;
+    margin-bottom: 24px;
+}
+
+#button{
+    padding:16px 84.5px;
+}
+
+.category{
+    margin-bottom: 12px;
+}
+
+.price{
+    margin-bottom: 20px;
+}
+
+}
